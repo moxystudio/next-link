@@ -1,25 +1,28 @@
 {
-  "name": "@moxy/react-lib-template",
+  "name": "@moxy/next-link",
   "version": "0.0.0",
-  "description": "A template that aims to make the implementation of React component packages easier and more methodic.",
+  "description": "A wrapper component that uses next/link to enable client-side transitions between routes as well as external URLs.",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
     "lib",
     "es"
   ],
-  "homepage": "https://github.com/moxystudio/react-lib-template#readme",
-  "author": "Rui Monteiro <rui.monteiro@moxy.studio>",
+  "homepage": "https://github.com/moxystudio/next-link#readme",
+  "author": "Diogo Silva <diogo.silva@moxy.studio>",
   "license": "MIT",
   "keywords": [
-    "template"
+    "next",
+    "nextjs",
+    "link",
+    "react"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moxystudio/react-lib-template.git"
+    "url": "git+https://github.com/moxystudio/next-link.git"
   },
   "bugs": {
-    "url": "https://github.com/moxystudio/react-lib-template/issues"
+    "url": "https://github.com/moxystudio/next-link/issues"
   },
   "scripts": {
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src -d lib --delete-dir-on-start",
@@ -32,6 +35,7 @@
     "postrelease": "git push --follow-tags origin HEAD && npm publish"
   },
   "peerDependencies": {
+    "next": "^9.3.5",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
@@ -55,6 +59,7 @@
     "husky": "^4.0.10",
     "jest": "^25.2.6",
     "lint-staged": "^10.0.2",
+    "next": "^9.3.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "standard-version": "^7.0.0"
